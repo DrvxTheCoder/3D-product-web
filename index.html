@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Assets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/rotate.js"></script>
+</head>
+<body>
+
+    <div class="card">
+        <span class="material-symbols-outlined icon">3d_rotation</span> 
+
+        <div class="puffa">
+        </div>
+        <div class="contentBox">
+          <h3>PUFFER JACKET</h3>
+          <small class="info-3d">$250.49</small>
+          <div class="button">BUY NOW</div>
+        </div>
+      
+      </div>
+</body>
+<script>
+    $('.puffa').rotate3d({
+        'source': 'img-opt/',
+        'ext' : '.png',
+        'count' : 44,
+        'speed': 10,
+    });
+</script>
+</html>
