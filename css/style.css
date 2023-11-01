@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+}
+.card {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: #6c8e90;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+  
+  
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+  
+.card .contentBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.card .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+  
+.card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #ffce00;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.info-3d{
+    color: darkslategray;
+    font-weight: 500;
+}
+
+.icon{
+    color: gray;
+    margin: 1rem;
+    position: absolute;
+    padding: 0.2rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+  
+img{
+    max-width: 20rem !important;
+    height: auto;
+}
+
+.puffa{
+    top: 4rem;
+    z-index: 99 !important;
+    position: relative;
+    transition: 0.5s;
+    animation: rise 1.5s ease-in-out;
+    cursor: grab;
+}
+.puffa:active{
+    cursor: grabbing;
+}
+
+.button{
+    margin-top: 0.5rem;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@keyframes rise{
+    0%{
+        top: 8rem;
+        opacity: 0;
+    }
+    100%{
+        top: 4rem;
+        opacity: 1;
+    }
+}
